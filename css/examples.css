@@ -1,0 +1,154 @@
+.examples {
+    width: 100%;
+    height: 1749px;
+    background-image: url(../images/examplesBackground.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+.examples-wrapper {
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.examples__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.examples__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.examples__content .content__item {
+    min-width: 45%;
+    height: 447px;
+    border-radius: 15px;
+    margin: 15px;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.examples__content .content__item:hover .content__item-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.content__item-hover {
+    width: 100%;
+    height: 100%;
+    background-color: #67AEFC;
+    border-radius: 15px;
+    display: none;
+
+}
+
+.content__item-hover .item-hover__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+.content__item-hover .item-hover__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;
+    color: #FFFFFF;
+}
+
+.examples__content .content__item-1 {
+    background-image: url(../images/examples/bulkPurchases.png);
+    background-size: cover;
+}
+
+
+.examples__content .content__item-2 {
+    background-image: url(../images/examples/florists.png);
+    background-size: cover;
+}
+
+
+.examples__content .content__item-3 {
+    background-image: url(../images/examples/hairdressers.png);
+    background-size: cover;
+}
+
+
+.examples__content .content__item-4 {
+    background-image: url(../images/examples/makeupArtists.png);
+    background-size: cover;
+}
+
+.examples__content .content__item-5 {
+    background-image: url(../images/examples/confectioners.png);
+    background-size: cover;
+}
+
+.examples__content .content__item-6 {
+    background-image: url(../images/examples/artists.png);
+    background-size: cover;
+}
+
+.examples__wrapper-button {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.examples__button-left {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #67AEFC;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.examples__button-right {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #67AEFC;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .examples__content {
+        width: 200%;
+        transform: translateX(27%);
+    }
+
+    .examples-wrapper {
+        overflow: hidden;  
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .examples__content .content__item {
+        height: 350px;
+    }
+    .examples {
+        padding: 50px 0 0 0;
+    }
+} 

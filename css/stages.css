@@ -1,0 +1,186 @@
+.stages {
+    width: 100%;
+    height: 908px;
+    background-image: url(../images/stages.background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 125px 50px;
+}
+
+.stages__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.stages__slider {
+    width: 100%;
+    height: 50%;
+    margin: 85px 0;
+    overflow: hidden;
+
+}
+
+.stages__slider-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+}
+
+.stages__slide {
+    min-width: 48%;
+    height: 100%;    
+    border: 2px solid #67AEFC;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 1%;
+    padding: 40px 40px;
+    display: flex;
+}
+
+.slide__content {
+    width: 50%;
+    height: auto;
+}
+
+.slide__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 125%;
+}
+
+.slide__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 20px;
+}
+
+.slide__image {
+    width: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slide__image-1 {
+    background-image: url(../images/stages/analysis.png);
+}
+
+.slide__image-2 {
+    background-image: url(../images/stages/visualsolution.png);
+}
+
+.slide__image-3 {
+    background-image: url(../images/stages/technicalImplementation.png);
+}
+
+.slide__image-4 {
+    background-image: url(../images/stages/technicalImplementation.png);
+}
+
+.slide__image-5 {
+    background-image: url(../images/stages/testing.png);
+}
+
+.stages__buttons {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.stages__button {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #67AEFC;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stages__button:active {
+    background: #67AEFC;
+}
+
+.stages__button-left {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/arrow.svg);
+    background-size: cover;
+    transform: rotate(90deg);
+}
+
+.stages__button-right {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/arrow.svg);
+    background-size: cover;
+    transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 1250px) {
+    .stages__slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide__content {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide__image {
+        width: 100%;
+        height: 85%;
+        margin-top: 10px;
+    }
+
+    .stages__slider {
+        height: 90%;
+    }
+
+    .stages__slide {
+        padding: 20px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide__title {
+        font-size: 18px;
+
+    }
+    
+    .slide__text {
+        font-size: 16px;
+    }
+} 
+
+@media screen and (max-width: 700px) {
+    .stages__title {
+        width: 100%;
+    }
+
+    .stages {
+        padding: 60px 50px;
+    }
+
+    .stages__slide {
+        min-width: 98%;
+        align-items: center;
+    }
+
+    .slide__image {
+        width: 50%;
+        height: 85%;
+    }
+} 

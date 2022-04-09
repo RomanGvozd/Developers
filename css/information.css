@@ -1,0 +1,44 @@
+.information {
+    width: 100%;
+    height: 724px;
+    background-image: url(../images/informationBackground.png);
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.information__title {
+    width: 80%;
+    height: auto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.information__text {
+    width: 80%;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 50px;
+}
+
+.information__button {
+    width: 270px;
+    height: 60px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .information__title {
+        width: 100%;   
+    }
+    .information__text {
+        width: 100%;   
+    }
+    .information__button {
+        width: 100%;   
+    }
+} 
